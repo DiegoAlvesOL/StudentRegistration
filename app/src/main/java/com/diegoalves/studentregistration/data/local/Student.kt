@@ -1,16 +1,15 @@
 
-
 package com.diegoalves.studentregistration.data.local
-
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName="students" )
+
+@Entity(tableName= "students" )
 data class Student(
-    @PrimaryKey(autoGenerate= true)
-    val studentId: Int = 0,
-    val name: String ,
-    val course: String ,
+    @PrimaryKey(autoGenerate =true)
+    val studentId: Int= 0,
+    val name: String,
+    val course: String,
     val year: Int
 )
